@@ -1,4 +1,4 @@
-def is_prime(number) :
+def is_prime(number: int) -> bool:
     if number <= 1:
         return False
     elif number <= 3:
@@ -11,7 +11,6 @@ def is_prime(number) :
          i += 1
     return True
          
-if __name__ == '__main__':
-    print (is_prime(9))
-    print (is_prime(7))
-    print (is_prime(13))
+print (is_prime(9))
+print (is_prime(7))
+print (is_prime(13))
