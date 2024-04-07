@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31C547BC2BBDEBFE00222279 /* Garden_Watering_Schedule_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C547BB2BBDEBFE00222279 /* Garden_Watering_Schedule_GeneratorApp.swift */; };
+		31C547BE2BBDEBFE00222279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C547BD2BBDEBFE00222279 /* ContentView.swift */; };
+		31C547C02BBDEC0000222279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C547BF2BBDEC0000222279 /* Assets.xcassets */; };
+		31C547C32BBDEC0000222279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C547C22BBDEC0000222279 /* Preview Assets.xcassets */; };
+		31C547CD2BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C547CC2BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorTests.swift */; };
+		31C547D72BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C547D62BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITests.swift */; };
+		31C547D92BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C547D82BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31C547C92BBDEC0000222279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31C547B02BBDEBFE00222279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31C547B72BBDEBFE00222279;
+			remoteInfo = "Garden Watering Schedule Generator";
+		};
+		31C547D32BBDEC0000222279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31C547B02BBDEBFE00222279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31C547B72BBDEBFE00222279;
+			remoteInfo = "Garden Watering Schedule Generator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31C547B82BBDEBFE00222279 /* Garden Watering Schedule Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garden Watering Schedule Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C547BB2BBDEBFE00222279 /* Garden_Watering_Schedule_GeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden_Watering_Schedule_GeneratorApp.swift; sourceTree = "<group>"; };
+		31C547BD2BBDEBFE00222279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31C547BF2BBDEC0000222279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31C547C22BBDEC0000222279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31C547C82BBDEC0000222279 /* Garden Watering Schedule GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Garden Watering Schedule GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C547CC2BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden_Watering_Schedule_GeneratorTests.swift; sourceTree = "<group>"; };
+		31C547D22BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Garden Watering Schedule GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C547D62BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden_Watering_Schedule_GeneratorUITests.swift; sourceTree = "<group>"; };
+		31C547D82BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden_Watering_Schedule_GeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31C547B52BBDEBFE00222279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C547C52BBDEC0000222279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C547CF2BBDEC0000222279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31C547AF2BBDEBFE00222279 = {
+			isa = PBXGroup;
+			children = (
+				31C547BA2BBDEBFE00222279 /* Garden Watering Schedule Generator */,
+				31C547CB2BBDEC0000222279 /* Garden Watering Schedule GeneratorTests */,
+				31C547D52BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests */,
+				31C547B92BBDEBFE00222279 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31C547B92BBDEBFE00222279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31C547B82BBDEBFE00222279 /* Garden Watering Schedule Generator.app */,
+				31C547C82BBDEC0000222279 /* Garden Watering Schedule GeneratorTests.xctest */,
+				31C547D22BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31C547BA2BBDEBFE00222279 /* Garden Watering Schedule Generator */ = {
+			isa = PBXGroup;
+			children = (
+				31C547BB2BBDEBFE00222279 /* Garden_Watering_Schedule_GeneratorApp.swift */,
+				31C547BD2BBDEBFE00222279 /* ContentView.swift */,
+				31C547BF2BBDEC0000222279 /* Assets.xcassets */,
+				31C547C12BBDEC0000222279 /* Preview Content */,
+			);
+			path = "Garden Watering Schedule Generator";
+			sourceTree = "<group>";
+		};
+		31C547C12BBDEC0000222279 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				31C547C22BBDEC0000222279 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31C547CB2BBDEC0000222279 /* Garden Watering Schedule GeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				31C547CC2BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorTests.swift */,
+			);
+			path = "Garden Watering Schedule GeneratorTests";
+			sourceTree = "<group>";
+		};
+		31C547D52BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31C547D62BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITests.swift */,
+				31C547D82BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITestsLaunchTests.swift */,
+			);
+			path = "Garden Watering Schedule GeneratorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31C547B72BBDEBFE00222279 /* Garden Watering Schedule Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31C547DC2BBDEC0000222279 /* Build configuration list for PBXNativeTarget "Garden Watering Schedule Generator" */;
+			buildPhases = (
+				31C547B42BBDEBFE00222279 /* Sources */,
+				31C547B52BBDEBFE00222279 /* Frameworks */,
+				31C547B62BBDEBFE00222279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Garden Watering Schedule Generator";
+			productName = "Garden Watering Schedule Generator";
+			productReference = 31C547B82BBDEBFE00222279 /* Garden Watering Schedule Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31C547C72BBDEC0000222279 /* Garden Watering Schedule GeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31C547DF2BBDEC0000222279 /* Build configuration list for PBXNativeTarget "Garden Watering Schedule GeneratorTests" */;
+			buildPhases = (
+				31C547C42BBDEC0000222279 /* Sources */,
+				31C547C52BBDEC0000222279 /* Frameworks */,
+				31C547C62BBDEC0000222279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31C547CA2BBDEC0000222279 /* PBXTargetDependency */,
+			);
+			name = "Garden Watering Schedule GeneratorTests";
+			productName = "Garden Watering Schedule GeneratorTests";
+			productReference = 31C547C82BBDEC0000222279 /* Garden Watering Schedule GeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31C547D12BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31C547E22BBDEC0000222279 /* Build configuration list for PBXNativeTarget "Garden Watering Schedule GeneratorUITests" */;
+			buildPhases = (
+				31C547CE2BBDEC0000222279 /* Sources */,
+				31C547CF2BBDEC0000222279 /* Frameworks */,
+				31C547D02BBDEC0000222279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31C547D42BBDEC0000222279 /* PBXTargetDependency */,
+			);
+			name = "Garden Watering Schedule GeneratorUITests";
+			productName = "Garden Watering Schedule GeneratorUITests";
+			productReference = 31C547D22BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31C547B02BBDEBFE00222279 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					31C547B72BBDEBFE00222279 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					31C547C72BBDEC0000222279 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 31C547B72BBDEBFE00222279;
+					};
+					31C547D12BBDEC0000222279 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 31C547B72BBDEBFE00222279;
+					};
+				};
+			};
+			buildConfigurationList = 31C547B32BBDEBFE00222279 /* Build configuration list for PBXProject "Garden Watering Schedule Generator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31C547AF2BBDEBFE00222279;
+			productRefGroup = 31C547B92BBDEBFE00222279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31C547B72BBDEBFE00222279 /* Garden Watering Schedule Generator */,
+				31C547C72BBDEC0000222279 /* Garden Watering Schedule GeneratorTests */,
+				31C547D12BBDEC0000222279 /* Garden Watering Schedule GeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31C547B62BBDEBFE00222279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C547C32BBDEC0000222279 /* Preview Assets.xcassets in Resources */,
+				31C547C02BBDEC0000222279 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C547C62BBDEC0000222279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C547D02BBDEC0000222279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31C547B42BBDEBFE00222279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C547BE2BBDEBFE00222279 /* ContentView.swift in Sources */,
+				31C547BC2BBDEBFE00222279 /* Garden_Watering_Schedule_GeneratorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C547C42BBDEC0000222279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C547CD2BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C547CE2BBDEC0000222279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C547D72BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITests.swift in Sources */,
+				31C547D92BBDEC0000222279 /* Garden_Watering_Schedule_GeneratorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31C547CA2BBDEC0000222279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31C547B72BBDEBFE00222279 /* Garden Watering Schedule Generator */;
+			targetProxy = 31C547C92BBDEC0000222279 /* PBXContainerItemProxy */;
+		};
+		31C547D42BBDEC0000222279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31C547B72BBDEBFE00222279 /* Garden Watering Schedule Generator */;
+			targetProxy = 31C547D32BBDEC0000222279 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		31C547DA2BBDEC0000222279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31C547DB2BBDEC0000222279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31C547DD2BBDEC0000222279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Garden Watering Schedule Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = 7GK9M4LFX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annika.Garden-Watering-Schedule-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31C547DE2BBDEC0000222279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Garden Watering Schedule Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = 7GK9M4LFX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annika.Garden-Watering-Schedule-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31C547E02BBDEC0000222279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GK9M4LFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annika.Garden-Watering-Schedule-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garden Watering Schedule Generator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Garden Watering Schedule Generator";
+			};
+			name = Debug;
+		};
+		31C547E12BBDEC0000222279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GK9M4LFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annika.Garden-Watering-Schedule-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garden Watering Schedule Generator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Garden Watering Schedule Generator";
+			};
+			name = Release;
+		};
+		31C547E32BBDEC0000222279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GK9M4LFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annika.Garden-Watering-Schedule-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Garden Watering Schedule Generator";
+			};
+			name = Debug;
+		};
+		31C547E42BBDEC0000222279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GK9M4LFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annika.Garden-Watering-Schedule-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Garden Watering Schedule Generator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31C547B32BBDEBFE00222279 /* Build configuration list for PBXProject "Garden Watering Schedule Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C547DA2BBDEC0000222279 /* Debug */,
+				31C547DB2BBDEC0000222279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31C547DC2BBDEC0000222279 /* Build configuration list for PBXNativeTarget "Garden Watering Schedule Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C547DD2BBDEC0000222279 /* Debug */,
+				31C547DE2BBDEC0000222279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31C547DF2BBDEC0000222279 /* Build configuration list for PBXNativeTarget "Garden Watering Schedule GeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C547E02BBDEC0000222279 /* Debug */,
+				31C547E12BBDEC0000222279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31C547E22BBDEC0000222279 /* Build configuration list for PBXNativeTarget "Garden Watering Schedule GeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C547E32BBDEC0000222279 /* Debug */,
+				31C547E42BBDEC0000222279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31C547B02BBDEBFE00222279 /* Project object */;
+}
