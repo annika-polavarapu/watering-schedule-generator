@@ -1,7 +1,7 @@
 import urllib.request
 import json
 
-def fetch_weather_data(latitude, longitude):
+def fetchWeatherData(latitude, longitude):
     api_url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,precipitation,soil_temperature_6cm,soil_moisture_3_to_9cm"
 
     try:
@@ -9,20 +9,20 @@ def fetch_weather_data(latitude, longitude):
             data = json.loads(response.read().decode())
 
         temperature = data['hourly']['temperature_2m']
-        humidity = data['hourly']['relative_humidity_2m']
-        precipitation_probability = data['hourly']['precipitation_probability']
+        humidity = data['hourly']['relativeHumidity_2m']
+        precipitationProbability = data['hourly']['precipitationProbability']
         precipitation = data['hourly']['precipitation']
-        soil_temperature = data['hourly']['soil_temperature_6cm']
-        soil_moisture = data['hourly']['soil_moisture_3_to_9cm']
+        soilTemperature = data['hourly']['soilTemperature6cm']
+        soilMoisture = data['hourly']['soilMoisture3To9cm']
 
         # Storing the weather data as dictionary
         return {
             'temperature': temperature,
             'humidity': humidity,
-            'precipitation_probability': precipitation_probability,
+            'precipitation_probability': precipitationProbability,
             'precipitation': precipitation,
-            'soil_temperature': soil_temperature,
-            'soil_moisture': soil_moisture
+            'soilTemperature': soilTemperature,
+            'soilMoisture': soilMoisture
         }
     except urllib.error.URLError as e:
         print("Error fetching weather data:", e)
@@ -31,21 +31,21 @@ def fetch_weather_data(latitude, longitude):
 if __name__ == "__main__":
     latitude = 37.3144
     longitude = -122.0566
-    weather_data = fetch_weather_data(latitude, longitude)
-    if weather_data:
+    weatherData = fetchWeatherData(latitude, longitude)
+    if weatherData:
         # Put data in variables
-        temperature = weather_data['temperature']
-        humidity = weather_data['humidity']
-        precipitation_probability = weather_data['precipitation_probability']
-        precipitation = weather_data['precipitation']
-        soil_temperature = weather_data['soil_temperature']
-        soil_moisture = weather_data['soil_moisture']
+        temperature = weatherData['temperature']
+        humidity = weatherData['humidity']
+        precipitationProbability = weatherData['precipitationProbability']
+        precipitation = weatherData['precipitation']
+        soilTemperature = weatherData['soilTemperature']
+        soilMoisture = weatherData['soilMoisture']
         
         # Print variables
         print("Temperature:", temperature)
         print("Humidity:", humidity)
-        print("Precipitation Probability:", precipitation_probability)
+        print("Precipitation Probability:", precipitationProbability)
         print("Precipitation:", precipitation)
-        print("Soil Temperature:", soil_temperature)
-        print("Soil Moisture:", soil_moisture)
+        print("Soil Temperature:", soilTemperature)
+        print("Soil Moisture:", soilMoisture)
 
