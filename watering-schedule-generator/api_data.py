@@ -1,7 +1,7 @@
 import urllib.request
 import json
 
-def fetchWeatherData(latitude, longitude):
+def getWeatherData(latitude, longitude):
     api_url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,precipitation,soil_temperature_6cm,soil_moisture_3_to_9cm"
 
     try:
@@ -9,11 +9,11 @@ def fetchWeatherData(latitude, longitude):
             data = json.loads(response.read().decode())
 
         temperature = data['hourly']['temperature_2m']
-        humidity = data['hourly']['relativeHumidity_2m']
-        precipitationProbability = data['hourly']['precipitationProbability']
+        humidity = data['hourly']['relative_humidity_2m']
+        precipitationProbability = data['hourly']['precipitation_probability']
         precipitation = data['hourly']['precipitation']
-        soilTemperature = data['hourly']['soilTemperature6cm']
-        soilMoisture = data['hourly']['soilMoisture3To9cm']
+        soilTemperature = data['hourly']['soil_temperature_6cm']
+        soilMoisture = data['hourly']['soil_moisture_3_to_9cm']
 
         # Storing the weather data as dictionary
         return {
@@ -21,8 +21,8 @@ def fetchWeatherData(latitude, longitude):
             'humidity': humidity,
             'precipitation_probability': precipitationProbability,
             'precipitation': precipitation,
-            'soilTemperature': soilTemperature,
-            'soilMoisture': soilMoisture
+            'soil_temperature': soilTemperature,
+            'soil_moisture': soilMoisture
         }
     except urllib.error.URLError as e:
         print("Error fetching weather data:", e)

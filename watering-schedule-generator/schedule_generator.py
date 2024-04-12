@@ -1,4 +1,4 @@
-from api_data import fetchWeatherData
+from api_data import getWeatherData
 
 def shouldWater(temperature, humidity, precipitationProbability, precipitation, soilMoisture, wateringNeeds, sunlightExposure):
     # Min and max values for watering
@@ -21,18 +21,18 @@ def shouldWater(temperature, humidity, precipitationProbability, precipitation, 
     else:
         return False
 
-def generateWateringSchedule(weatherData, wateringNeeds, sunlighExposure, lastWateredDay):
+def generateWateringSchedule(weatherData, wateringNeeds, sunlightExposure, lastWateredDay):
     # Extracting weather variables from the data for 7 days
-    temperature = weatherData['temperature']#[:7]
-    humidity = weatherData['humidity']#[:7]
-    precipitationProbability = weatherData['precipitationProbability']#[:7]
-    precipitation = weatherData['precipitation']#[:7]
-    soilMoisture = weatherData['soilMoisture']#[:7]
+    temperature = weatherData['temperature'][:7]
+    humidity = weatherData['humidity'][:7]
+    precipitationProbability = weatherData['precipitation_probability'][:7]
+    precipitation = weatherData['precipitation'][:7]
+    soilMoisture = weatherData['soil_moisture'][:7]
 
     # Generating watering schedule
     wateringSchedule = []
     for day in range(len(temperature)):
-        if shouldWater(temperature[day], humidity[day], precipitationProbability[day], precipitation[day], soilMoisture[day], wateringNeeds, sunlighExposure):
+        if shouldWater(temperature[day], humidity[day], precipitationProbability[day], precipitation[day], soilMoisture[day], wateringNeeds, sunlightExposure):
             wateringSchedule.append(f"Day {day + 1}: Watering needed")
             lastWateredDay = day
         else:
@@ -41,27 +41,33 @@ def generateWateringSchedule(weatherData, wateringNeeds, sunlighExposure, lastWa
     return wateringSchedule, lastWateredDay
 
 def main():
-    useHardcodedData = True
+    useHardcodedData = bool(input("Use hardcoded data? (Enter True or False): "))
 
     if useHardcodedData:
         # Hardcoded weather data
         weatherData = {
             'temperature': [22, 24, 23, 20, 18, 21, 20],
             'humidity': [70, 75, 80, 78, 82, 75, 70],
-            'precipitationProbability': [10, 20, 15, 5, 30, 10, 25],
+            'precipitation_probability': [10, 20, 15, 5, 30, 10, 25],
             'precipitation': [0.1, 0.2, 0.0, 0.0, 0.5, 0.3, 0.0],
-            'soilMoisture': [0.4, 0.35, 0.3, 0.25, 0.2, 0.15, 0.1]
+            'soil_moisture': [0.4, 0.35, 0.3, 0.25, 0.2, 0.15, 0.1]
         }
     else:
         # Fetching weather data from API
-        latitude = 37.322998 # Cupertino
-        longitude = -122.032181
-        weatherData = fetchWeatherData(latitude, longitude)
+        latitude = float(input("Enter latitude coordinate of your location: ")) # Cupertino 37.322998 
+        longitude = float(input("Enter longitude coordinate of your location: ")) # -122.032181
+        weatherData = getWeatherData(latitude, longitude)
+
 
     if weatherData:
-        # Getting user input
-        wateringNeeds = input("Enter watering needs (low, medium, high): ")
-        sunlightExposure = input("Enter sunlight exposure (shade, sun): ")
+        if useHardcodedData:
+            wateringNeedsInput = input("Enter watering needs (low, medium, high): ")
+            sunlightExposureInput = input("Enter sunlight exposure (shade, sun): ")
+            wateringNeeds = wateringNeedsInput.lower()
+            sunlightExposure = sunlightExposureInput.lower()
+        else:
+            wateringNeeds = "medium"
+            sunlightExposure = "sun"
 
         if wateringNeeds == "low":
             wateringNeeds = 1
