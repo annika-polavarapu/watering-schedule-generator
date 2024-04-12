@@ -49,7 +49,7 @@ def main():
             'temperature': [22, 24, 23, 20, 18, 21, 20],
             'humidity': [70, 75, 80, 78, 82, 75, 70],
             'precipitation_probability': [10, 20, 15, 5, 30, 10, 25],
-            'precipitation': [0.1, 0.2, 0.0, 0.0, 0.5, 0.3, 0.0],
+            'precipitation': [0.1, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0],
             'soil_moisture': [0.4, 0.35, 0.3, 0.25, 0.2, 0.15, 0.1]
         }
     else:

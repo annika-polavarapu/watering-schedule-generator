@@ -31,15 +31,15 @@ def getWeatherData(latitude, longitude):
 if __name__ == "__main__":
     latitude = 37.3144
     longitude = -122.0566
-    weatherData = fetchWeatherData(latitude, longitude)
+    weatherData = getWeatherData(latitude, longitude)
     if weatherData:
         # Put data in variables
         temperature = weatherData['temperature']
         humidity = weatherData['humidity']
-        precipitationProbability = weatherData['precipitationProbability']
+        precipitationProbability = weatherData['precipitation_probability']
         precipitation = weatherData['precipitation']
-        soilTemperature = weatherData['soilTemperature']
-        soilMoisture = weatherData['soilMoisture']
+        soilTemperature = weatherData['soil_temperature']
+        soilMoisture = weatherData['soil_moisture']
         
         # Print variables
         print("Temperature:", temperature)
